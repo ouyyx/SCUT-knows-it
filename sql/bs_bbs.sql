@@ -25,27 +25,100 @@ SET time_zone = "+00:00";
 
 --
 -- Table structure for table `admin`
+--CREATE TABLE `admin` (
+  `id` int(11) NOT NULL COMMENT '编号',
+  `passport` varchar(50) DEFAULT NULL COMMENT '帐号',
+  `password` varchar(50) DEFAULT NULL COMMENT '密码',
+  `login_times` int(11) DEFAULT NULL COMMENT '登录次数',
+  `last_login` datetime DEFAULT NULL COMMENT '最后登录时间'
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='管理员';
+
 --
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `passport`, `password`, `login_times`, `last_login`) VALUES
+(1, 'admin', 'admin', 1, '2015-03-31 00:00:00');
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `books`
+--CREATE TABLE `books` (
+  `id` int(11) NOT NULL COMMENT '编号',
+  `conts` text COMMENT '内容',
+  `post_time` varchar(200) DEFAULT NULL COMMENT '发送时间',
+  `reply` text COMMENT '管理回复',
+  `reply_time` varchar(200) DEFAULT NULL COMMENT '回复时间',
+  `user_id` int(11) DEFAULT NULL COMMENT '会员id'
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='留言本';
+
 --
+-- Dumping data for table `books`
+--
+
+INSERT INTO `books` (`id`, `conts`, `post_time`, `reply`, `reply_time`, `user_id`) VALUES
+(11, '测试测试测试测试测试测试测试测试测试测试测试测试测试测试', '2021-11-30 13:54:23', '留言回复留言回复留言回复留言回复留言回复留言回复留言回复', '2021-11-30 13:57:03', 10),
+(10, '测试测试测试测试测试测试测试测试', '2021-11-30 13:54:19', '', '', 10);
+
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `cat`
+--CREATE TABLE `cat` (
+  `id` int(11) NOT NULL COMMENT '编号',
+  `name` varchar(20) DEFAULT NULL COMMENT '名称',
+  `desc` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='栏目';
+
 --
+-- Dumping data for table `cat`
+--
+
+INSERT INTO `cat` (`id`, `name`, `desc`) VALUES
+(5, '选课交流', '关于通选课、体育课，你有什么想说的？'),
+(6, '学习讨论', '无论是人人发愁的微积分还是线性代数你都能在这里找到高手与你解答！'),
+(7, '资源共享', '作业参考答案、网课练习题、课本电子书……你想要的资料，我们应有尽有！'),
+(8, '华园表白墙', '“爱”要大声说出来呀！');
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `comm`
+--CREATE TABLE `comm` (
+  `id` int(11) NOT NULL COMMENT '编号',
+  `post_id` int(11) DEFAULT NULL COMMENT '帖子',
+  `user_id` int(11) DEFAULT NULL COMMENT '会员',
+  `conts` text COMMENT '内容',
+  `post_time` datetime DEFAULT NULL COMMENT '时间'
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='帖子回复';
+
 --
+-- Dumping data for table `comm`
+--
+
+INSERT INTO `comm` (`id`, `post_id`, `user_id`, `conts`, `post_time`) VALUES
+(21, 17, 11, '下载测试<span>下载测试</span><span>下载测试</span><span>下载测试</span><span>下载测试</span><span>下载测试</span><span>下载测试</span>', '2021-11-30 13:56:49'),
+(20, 15, 11, '<span>回复测试</span><span>回复测试</span><span>回复测试</span><span>回复测试</span><span>回复测试</span><span>回复测试</span>', '2021-11-30 13:56:10');
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `flower`
+--CREATE TABLE `flower` (
+  `id` int(11) NOT NULL COMMENT '编号',
+  `f_user` int(11) DEFAULT NULL COMMENT '发起人',
+  `t_user` int(11) DEFAULT NULL COMMENT '目标人',
+  `add_time` datetime DEFAULT NULL COMMENT '时间'
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='送花';
+
 --
+-- Dumping data for table `flower`
+--
+
+INSERT INTO `flower` (`id`, `f_user`, `t_user`, `add_time`) VALUES
+(5, 11, 10, '2021-11-30 13:56:15');
+
 -- --------------------------------------------------------
 
 --
