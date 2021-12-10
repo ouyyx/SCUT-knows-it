@@ -1,0 +1,29 @@
+* {padding:0;margin:0;}
+body {background:#1873AA; font-family:"宋体", Helvetica, sans-serif; font-size:14px; color:#000; line-height:100%}
+a {border:0;color:#0000FF;text-decoration:none}
+a:hover {color:#000; text-decoration:underline}
+img { display:block}
+ul,li,dl,dd,dt,ol { list-style:none}
+.clearfix:after{content: "\20";display: block;height: 0;clear: both;visibility: hidden}
+.clearfix{display: inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+.clear{ clear:both; font-size:0; height:0; line-height:0; overflow:hidden}
+
+.loginloop { width: 608px; height: 363px; background: url(../login.png) no-repeat; margin: 100px auto}
+
+.adminheader { background: url(../tbg.gif) repeat-x; height: 85px}
+.adminheader .logo { font-size: 30px; color: #ff0; line-height: 85px;}
+.adminheader .logo a { color: #ff0; padding-left: 20px;}
+.adminheader .logo span { color: #ff0; padding-left: 20px;}
+
+#adminleft { background: url(../bg2.jpg) repeat; font-weight: bold; padding: 10px 0 0 20px; line-height: 20px;}
+#adminleft p { color: #000; padding-top: 10px; font-size: 16px;}
+#adminleft .leftnav div { padding-left: 20px;}
+.adminloops { padding: 10px}
+.table { border-left: 1px solid #ddd;border-top: 1px solid #ddd; text-align: left; padding: 0; margin: 0}
+.table th { background: #2E9F13; color: #fff; padding: 5px; border-right: 1px solid #ddd;border-bottom: 1px solid #ddd; text-align: left; margin: 0}
+.table td { background: #fff; padding: 5px;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd; text-align: left; margin: 0}
+.submit { width: 100px; height: 30px; background: #09c; border: 0; color: #fff}
+
+.peger { padding: 10px;}
