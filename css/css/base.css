@@ -1,0 +1,72 @@
+* {padding:0;margin:0;}
+body {background:url(../bg2.jpg) repeat 50% 0;font-family:"Î¢ÈíÑÅºÚ", Helvetica, sans-serif; font-size:14px; color:#000; line-height:100%}
+a { text-decoration: none;}
+a:hover { text-decoration: underline;}
+img { display:block}
+ul,li,dl,dd,dt,ol { list-style:none}
+.clearfix:after{content: "\20";display: block;height: 0;clear: both;visibility: hidden}
+.clearfix{display: inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+.clear{ clear:both; font-size:0; height:0; line-height:0; overflow:hidden}
+
+.wrapper { width:980px; padding: 10px 10px 10px 10px; margin:0 auto; background: #fff; border: 1px solid #ccc;}
+
+.header { height: 250px; background: url(../header.jpg) no-repeat;background-size: contain;}
+.header .logo { height: 175px;}
+.header .logo a { display: block; height: 175px; text-indent: -999em}
+
+.navs{ height: 40px; padding-left: 10px; margin-top: 5px; background: #0099CC;}
+.navs li { float: left;}
+.navs li a { float: left; height: 40px; line-height: 40px; padding: 0 10px; color: #fff}
+
+.footer { border-top: 1px solid #ddd; text-align: center; padding: 20px;}
+
+.left { float: left; width: 250px; background: #ccc; overflow: hidden; line-height: 30px;}
+.left_box_tit { background: #09c; color: #fff; font-size: 14px; padding: 0 10px; line-height: 30px;}
+.left_box_tit a { color: #fff}
+.left_cate li a { color: #000; padding-left: 10px; display: block; border-bottom: 1px solid #aaa;}
+.left_cate li a:hover { background: #fff;}
+
+.table { border-left: 1px solid #ddd;border-top: 1px solid #ddd; text-align: left; padding: 0; margin: 0}
+.table th { background: #2E9F13; color: #fff; padding: 5px; border-right: 1px solid #ddd;border-bottom: 1px solid #ddd; text-align: left; margin: 0}
+.table td { padding: 5px;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd; text-align: left; margin: 0}
+.submit { width: 100px; height: 30px; background: #09c; border: 0; color: #fff}
+
+
+.right { float: right; width: 720px; overflow: hidden;}
+
+.box { width: 720px; overflow: hidden;}
+.box_tit { background: #f60; height: 30px; padding:0 10px;}
+.box_tit a {height: 30px; line-height: 30px; color: #fff; font-weight: bold; font-size: 14px;}
+.box_tit em { float: right;}
+.box ul { width: 780px;}
+.box ul li { float: left; width: 220px; height: 250px; overflow: hidden; padding-top: 10px; padding-bottom: 30px; margin-right: 30px;}
+.box ul li .tit { line-height: 20px;}
+.box ul li .jiage { line-height: 20px; padding-top: 10px; color: #f60; font-weight: bold;}
+.nlist { margin-bottom: 10px;}
+.nlist li { line-height: 40px; border-bottom: 1px  dashed #ccc;}
+.peger { text-align: center; padding: 20px;}
+.box_tit { line-height: 30px; color: #fff}
+
+.art_time { text-align: center; line-height: 30px; border-bottom: 1px dashed #ccc;}
+.art_cont { padding: 20px 0; line-height: 25px;}
+.art_tit { font-size: 20px; line-height: 30px; padding: 10px 0 0 0 ; text-align: center; color: #000}
+
+.gd_pic { padding-top: 20px; float: left;}
+.gd_info { float: right; width: 400px; padding-top: 20px; font-weight: bold; line-height: 30px;}
+
+.cat_list { border: 1px solid #ddd; border-top: 0; margin-bottom: 10px;}
+.cat_list .title { height: 33px; background: url(../tt.jpg) repeat-x; line-height: 33px; padding: 0 10px; font-weight: bold;}
+.cat_list .icon { padding: 20px; float: left;}
+.cat_list .desc { padding: 20px 0 0 0; width: 500px; float: left;}
+.cat_list .count { padding: 20px 0 0 0; width: 150px; float: left;}
+.cat_list .go { padding: 20px 20px 0 0; float: right;}
+.cat_list .sline { padding: 0 10px}
+.cat_list .stit { float: left; width: 600px;}
+.cat_list .stit a{color: #000;}
+.cat_list .shf { float: left; width: 150px}
+.cat_list .stime { float: right;}
+.cat_list .title a{color: #000;}
+.cat_list .go a{color: #000;}
+.sline{line-height: 30px !important;height: 30px !important;}
